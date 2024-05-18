@@ -17,7 +17,7 @@ print(m.restar(9, 5))
 
 Otra forma:
 
-from funciones_matematicas import *
+from modulo_math import *
 
 print(sumar(7, 5))
 print(restar(9, 5))
