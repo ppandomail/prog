@@ -1,0 +1,4 @@
+from pathlib import Path
+
+for dir in Path.cwd().iterdir():
+  print(dir.name)

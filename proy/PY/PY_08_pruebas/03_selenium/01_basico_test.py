@@ -26,3 +26,5 @@ class Test:
         assert "No results found." not in driver.page_source
         driver.close()
 
+# Se ejecuta con pytest
+# /Users/ppando/Materias/.venv/bin/pytest /Users/ppando/Materias/prog/proy/PY/PY_08_pruebas/03_selenium/02_basico_test.py
