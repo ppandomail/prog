@@ -1,0 +1,32 @@
+<html>
+<body>
+  <h1> {{temas}} </h1>     <!-- Muestra toda la lista -->
+  <h1> {{temas.1}} </h1>   <!-- Muestra 2do elemento  -->
+
+  <p> Temas: </p>
+  <ul> 
+    {% for t in temas %}
+    <li> {{t}} </li>
+    {% endfor %}
+  </ul>
+
+  <p> Temas: </p>
+  <p>
+    <ul>
+      {% if temas %}
+        {% for t in temas %}
+          <li> {{t.upper}} </li>    <!-- es t.upper y no t.upper() -->
+        {% endfor %}
+      {% else %}
+        <p> No hay elementos </p>
+      {% endif %}
+    </ul>
+  </p>
+
+  {# Es un comentario #}
+  {% comment %}
+    comentarios en varias lineas
+  {% endcomment %}
+
+</body>
+</html>

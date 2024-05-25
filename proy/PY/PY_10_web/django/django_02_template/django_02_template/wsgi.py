@@ -1,5 +1,5 @@
 """
-WSGI config for django_01_saludo project.
+WSGI config for django_02_template project.
 
 It exposes the WSGI callable as a module-level variable named ``application``.
 
@@ -11,6 +11,6 @@ import os
 
 from django.core.wsgi import get_wsgi_application
 
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'django_01_saludo.settings')
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'django_02_template.settings')
 
 application = get_wsgi_application()

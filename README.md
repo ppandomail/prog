@@ -11,8 +11,8 @@
 ## Programa
 
 1. [Revisión de conceptos de programación](doc/revision.md)
-1. [Estructuras de datos](doc/edatos.md)
-1. [Complejidad de los algoritmos](doc/complejidad.md)
+1. [Estructuras de datos](proy/PY/PY_03_colecciones/)
+1. [Complejidad de los algoritmos](proy/PY/PY_07_complejidad/)
 
 ## Bibliografía
 

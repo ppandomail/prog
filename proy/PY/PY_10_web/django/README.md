@@ -47,23 +47,45 @@ Abrir el navegador y escribir 127.0.0.1:8000 y nos lleva a la página de bienven
 
     ```py
     from django.http import HttpResponse
+    import datetime
 
-    def saludo(request):
+    def hola(request):
       return HttpResponse('Hola Mundo')
 
-    def despedida(request):
-      return HttpResponse('Adiós mundo cruel')
+    def chau(request):
+      return HttpResponse('Chau Mundo')
+    
+    def fecha(request):
+      fecha_actual = datetime.datetime.now()
+      documento = """ <html>
+                    <body>
+                      <h2> Fecha y hora actual %s </h2>
+                    </body>
+                    </html> """ % fecha_actual
+      return HttpResponse(documento)
+
+    def edad(request, edad, año):
+      periodo = año - 2024
+      edad_futura = edad + periodo
+      documento = """ <html>
+                      <body>
+                        <h2> En el año %s tendrás %s años</h2>
+                      </body>
+                      </html> """ %(año, edad_futura)
+      return HttpResponse(documento)
     ```
 
 2. Editar archivo urls.py
 
     ```py
-    from proy_django.index import saludo, despedida
+    from django_01_apis.index import hola, chau, fecha, edad
 
     urlpatterns = [
         path('admin/', admin.site.urls),    # tupla que viene por default
-        path('saludo/', saludo),
-        path('chau/', despedida),
+        path('hola/', hola),
+        path('chau/', chau),
+        path('fecha/', fecha),
+        path('edad/<int:edad>/<int:año>', edad),
     ]
     ```
 
@@ -74,5 +96,7 @@ Abrir el navegador y escribir 127.0.0.1:8000 y nos lleva a la página de bienven
     ```
 
 4. En navegador, introducir:
-    * localhost:8000/saludo/
+    * localhost:8000/hola/
     * localhost:8000/chau/
+    * localhost:8000/fecha/
+    * localhost:8000/edad/48/2030
