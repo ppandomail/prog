@@ -15,6 +15,8 @@ Instalación python en windows:
 9. Crear proyecto (mkdir <proy>) o clonarlo (git clone <url repo>)
 
 10. Crear entorno virtual: python -m venv venv
+    Permite aislar nuestra aplicación junto con todas sus dependencias de otras aplicaciones Python 
+    que tengamos en nuestro sistema.
 11. Activar entorno virtual: . venv\scripts\activate
 12. Instalar libreria: pip install <libname>
 13. Instalar librerias: pip install -r requirements.txt 

@@ -11,6 +11,8 @@ Instalación python en linux:
 5. Crear proyecto (mkdir <proy>) o clonarlo (git clone <url-repo>)
 
 6. Crear entorno virtual: python -m venv venv
+    Permite aislar nuestra aplicación junto con todas sus dependencias de otras aplicaciones Python 
+    que tengamos en nuestro sistema.
 7. Activar entorno virtual: . venv\bin\activate
 9. Instalar libreria: pip install <libname>
 10. Instalar librerias: pip install -r requirements.txt
