@@ -25,7 +25,7 @@ Sino pandas agrega en forma automática una col id
 numérico secuencial iniciando en 0
 """
 
-df = pd.read_csv("datasets/visitas.csv")
+df = pd.read_csv("visitas.csv")
 
 print(df)
 print(df.head(10))    # Muestra las primeras 10 filas
