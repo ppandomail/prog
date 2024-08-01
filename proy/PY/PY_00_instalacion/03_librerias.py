@@ -1,17 +1,4 @@
 """
-
-Librerías que no necesitan instalarse:
-
-. sys: funciones y parámetros específicos del SO
-. os: interfaz con el SO
-. io: funciones para menejo de flujos de datosy archivos  
-. string: funciones con cadenas 
-. datetime: funciones para fechas y tiempos 
-. calendar: funciones de calendario 
-. math: funciones y constantes estadisticas
-. random: generación de números pseudo-aleatorios
-. unittest: generación de tests unitarios
-
 Librerías que necesitan instalarse:
 
 . pytest: testing
