@@ -27,10 +27,7 @@ numérico secuencial iniciando en 0
 
 df = pd.read_csv("visitas.csv")
 
-print(df)
-print(df.head(10))    # Muestra las primeras 10 filas
-print(df.tail(10))    # Muestra las últimas 10 filas
-print(df.describe())  # Muestra estadísticas de las columnas numéricas
+
 
 # Limpieza de datos vacios o incompletos
 df_limpiado = df.dropna()                                   # Borrado filas NaN
